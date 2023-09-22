@@ -1,4 +1,105 @@
+html,
 body {
-  font-family: Source Sans 3;
-  font-family: Oswald;
+  height: 100%;
+  line-height: 1;
+  font-size: 20px;
+  color: #141414;
+  font-weight: 300;
+  font-family: "Source Sans 3";
+}
+
+/* font-family: Oswald; */
+
+/* ----------------------------------------------- */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+/* ----------------------------------------------- */
+/* технічні класи для визначення максимальної довжини сторінки*/
+._container {
+  max-width: 1120px;
+  margin: 0px auto;
+}
+
+._container-left {
+  align-items: start;
+  max-width: 640px;
+  margin: 0px auto;
+}
+
+._container-right {
+  align-items: end;
+  max-width: 480px;
+  margin: 0px auto;
+}
+
+/* -----HEADER------------------------------------------ */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 80px;
+}
+.header__container--centre {
+  align-items: center;
+}
+/* ------Header-left (logo+menu)------- */
+.header__container--left {
+  align-items: start;
+}
+.header__logo {
+  height: 48px;
+  width: 72px;
+  color: inherit;
+}
+
+.header__menu {
+  margin: 0px 0px 0px 120px;
+}
+.menu {
+  padding: 5px 0;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  margin: 0px 0px 0px 83px;
+  height: 48px;
+  weight: 160px;
+  align-items: center;
+}
+.menu__link {
+  color: #141414;
+  font-weight: 600;
+  line-height: calc(28 / 20 * 100%);
+}
+/* ------------Language----------- */
+.header__container--right {
+  align-items: end;
+}
+
+.header__lang {
+  margin: 0px 0px 0px 120px;
+}
+.lang {
+  padding: 5px 0;
+}
+.lang__list {
+  display: flex;
+}
+.lang__item {
+  margin: 0px 0px 0px 16px;
+  height: 48px;
+  weight: 48px;
+}
+.lang__link {
+  color: #141414;
+  font-weight: 300;
+  line-height: calc(28 / 20 * 100%);
 }
